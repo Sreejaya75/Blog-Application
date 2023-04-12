@@ -1,0 +1,9 @@
+Signup & Login
+https://www.youtube.com/watch?v=jNoMQq_G5DA
+
+
+Articles
+https://www.youtube.com/watch?v=gC7ilG9HZR4
+
+Save to Google Sheets
+https://github.com/levinunnink/html-form-to-google-sheet

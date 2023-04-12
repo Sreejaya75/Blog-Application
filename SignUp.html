@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="Style2.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+    <body>
+        <div id="d2">
+            <div class="center">
+                <h1>Create Your Account</h1>
+                <form action="Login.html">
+                    <label>
+                        <span style="font-size: 14pt;">Name</span>
+                        <input type="text" id="name" placeholder="Enter your name" class="f1">
+                    </label>
+                    <br>
+                    <label>
+                        <span style="font-size: 14pt;">Email</span>
+                        <input type="email" id="email" placeholder="Enter your email" class="f1">
+                    </label>
+                    <br>
+                    <label>
+                        <span style="font-size: 14pt;">Password</span>
+                        <input type="password" id="pass" placeholder="Enter your password" class="f1">
+                    </label>
+                    <input type="submit" onclick="addData()" value="Register" class="login">
+                </form>
+            </div>
+        </div>
+        <script src="signup.js"></script>
+        <div id="d1">
+            <div class="center">
+                Already have an account?<br>
+                <b style="font-size: larger;">Sign In</b> now<br>
+                <form action="Login.html"><button type="submit" class="signup">Log In</button></form>
+            </div>
+        </div>
+    </body>
+</html>

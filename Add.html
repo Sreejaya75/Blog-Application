@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Blog</title>
+        <link rel="stylesheet" href="StyleH.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+        <script src="saveArt.js"></script>
+        <script>
+            document.getElementById('Username').innerHTML = localStorage.getItem('UName');
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Let's Blog</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="Home.php">Home</a></li>
+                    <li><a class="active" href="#">Add</a></li>
+                    <li><a href="Delete.html">Delete</a></li>
+                    <li><a href="Login.html">Logout</a></li>
+                </ul>
+            </div>
+            <form id="new" action="insertArt.php" method="post">
+                
+                <label>
+                    Username<br>
+                    <textarea readonly rows="1" name="Username" class="finput" cols="40" id="Username" >Hi</textarea>
+                    <script>
+                        document.getElementById('Username').innerHTML = localStorage.getItem('UName');
+                    </script>
+                </label>
+                <label>
+                    Title<br>
+                    <textarea rows="2" name="Title" class="finput" cols="40"  placeholder="Enter your title" maxlength="50"></textarea>
+                </label>
+                <label>
+                    <span>Article</span>
+                    <textarea rows="12" name="Article" class="finput" cols="40" placeholder="Enter the description" maxlength="800"></textarea>
+                </label>
+                <label>
+                    <input type="submit" value="Post your writing!">
+                </label>
+            </form>            
+        </div>
+    </body>
+</html>
